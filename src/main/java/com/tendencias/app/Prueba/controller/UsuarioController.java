@@ -54,6 +54,7 @@ public class UsuarioController {
                 usuario.setPer_clave(u.getPer_clave());
                 usuario.setPer_direccion(u.getPer_direccion());
                 usuario.setPer_telefono(u.getPer_telefono());
+                usuario.setRol(u.getRol());
                 return new ResponseEntity<>(usuarioService.save(usuario), HttpStatus.CREATED);
             } catch (Exception e) {
                 return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);

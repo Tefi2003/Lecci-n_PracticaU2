@@ -22,6 +22,8 @@ import lombok.Data;
 @Entity
 public class Compras {
     
+    
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_compra")
